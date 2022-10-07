@@ -1,0 +1,91 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	height: 30px;
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 10px 0px 5px 0px;
+	font-size: x-large;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+footer {
+	height: 15px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 6px;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+.content {
+	position: relative;
+
+	min-height: 850px;
+	height: auto;
+	max-width: 800px;
+	width: 800px;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.side_bar {
+	position: absolute;
+
+	color: white;
+	background-color: red;
+	min-height: 850px;
+	height: auto;
+	width: 200px;
+}
+
+.link {
+	display: block;
+	margin: 15px 30px 0px 50px;
+}
+
+.first_link {
+	display: block;
+	margin: 35px 30px 0px 50px;
+}
+
+a {
+	color: white;
+}
+
+.link:hover {
+	background-color: green;
+}
+
+.link:active {
+	background: green;
+	/* Работало бы если ссылка куда-то вела :( */
+}
+
+span {
+	color: red;
+	font-size: x-large;
+}
+
+.main {
+	position: absolute;
+	left: 210px;
+	margin: 10px;
+	text-align: justify;
+	margin: 30px 10px 10px 10px;
+}
+
+.main::selection {
+	background-color: green;
+	color: white;
+}
+
+@media screen and (max-width: 800px) {
+	.content {
+		width: 100%;
+	}
+}
